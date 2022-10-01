@@ -1,0 +1,22 @@
+Download Images:
+    sudo docker pull python:3.9.14-buster
+    sudo docker pull ubuntu:20.04
+    sudo docker pull mysql:5.7
+
+Create containers:
+    create containerPythonCriss python:3.914-buster
+    create newContainer ubuntu:20.04
+
+Stop containers:
+    stop containerPythonCriss
+    stop newContainer
+
+Delete containers:
+    delete containerPythonCriss
+    delete newContainer
+
+List containers:
+    list containers
+
+Ejecutar comandos no default:
+    sudo docker run -p 3306:3306 --name myMySQL5.7Test -e MYSQL_ROOT_PASSWORD=root -d mysql:5.7
